@@ -1,24 +1,38 @@
-# README
+# Tarot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tarot is your invitation to divination! Attain greater understanding of the cosmic powers that be, and chart your life course with insightful cards from the famous Rider Waite deck.
 
-Things you may want to cover:
+## About
 
-* Ruby version
+Tarot presents three card Tarot readings, each card relating to the Past, Present and Future respectively. Don't like your reading? Fret not; Tarot provides a bespoke (random) selection of cards on every visit. With 17,576 possible combinations, every user is assured a unique experience!
 
-* System dependencies
+## Video Tour
 
-* Configuration
+WIP
 
-* Database creation
+## Under the Hood
 
-* Database initialization
+Ruby ver 2.6.1
+Rails 6.0.3.2
+ActiveRecord ver 6.0 3.2
+SQLite3 ver 1.4
+Sinatra ver 2.0
+Sinatra ActiveRecord ver 2.0
 
-* How to run the test suite
+## Install
 
-* Services (job queues, cache servers, search engines, etc.)
+To check out Tarot, install locally by cloning the GitHub repositories. For the backend, run rails db:migrate, rails db:seed and rails s to start a local server. For the frontend, run lite-server.
 
-* Deployment instructions
+## Code Highlights
 
-* ...
+`    const $chosenCard = card.filter(card => card.bundle === $bundle && card.id.toString() === $cardID.toString())
+`
+
+`let card = document.querySelector('.thecard1');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});`
+
+## Contact
+
+Created by [Ben Dunn](https://github.com/btdunn) and [Brook Beyene](https://github.com/brookbeyene)
